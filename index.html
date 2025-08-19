@@ -3,32 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiki’s Craft</title>
-  <link rel="stylesheet" href="style.css">
-  
+  <title>Kiki's Craft</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Шапка */
+    header {
+      position: relative;
+      width: 100%;
+      height: 480px; /* высота как на твоём скрине */
+      background: url("image/d9185ba777e4d02a640cdd1275f63aa2.jpg") no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #333;
+    }
+
+    /* Навигация */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-left a, .nav-right a {
+      text-decoration: none;
+      color: #444;
+      font-size: 16px;
+    }
+
+    .nav-left a:hover, .nav-right a:hover {
+      color: #ff7a90;
+    }
+
+    /* Логотип-текст в центре */
+    .header-center {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .header-center h1 {
+      font-size: 64px;
+      font-family: "Brush Script MT", cursive;
+      color: #d88c8c;
+      margin: 0;
+    }
+
+    .header-center p {
+      font-size: 20px;
+      color: #444;
+      margin-top: 15px;
+    }
+
+    /* Кнопки */
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .header-buttons a {
+      padding: 12px 25px;
+      border-radius: 25px;
+      background-color: #f8dcdc;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .header-buttons a:hover {
+      background-color: #ff7a90;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <!-- ШАПКА -->
-  <header class="site-header">
-  <h1>Kiki's Craft</h1>
-</header>
 
-  <header class="header">
-    <div class="logo">Kiki’s Craft</div>
+  <header>
+    <!-- Навигация -->
     <nav>
-      <ul>
-        <li><a href="#catalog">Каталог</a></li>
-        <li><a href="#about">О нас</a></li>
-      </ul>
+      <div class="nav-left">
+        <a href="#">☰ Меню</a>
+        <a href="#">Каталог</a>
+        <a href="#">О нас</a>
+      </div>
+      <div class="nav-right">
+        <a href="#">🔍</a>
+        <a href="#">👤</a>
+        <a href="#">🛒<sup>2</sup></a>
+      </div>
     </nav>
-  </header>
 
-  <!-- ГЛАВНЫЙ БАННЕР -->
-  <section class="hero">
-    <h1>Уютный мир вязаных игрушек амигуруми</h1>
-    <p>Создано с любовью и заботой 💕</p>
-    <a href="#catalog" class="btn">Посмотреть каталог</a>
-  </section>
+    <!-- Центр с логотипом -->
+    <div class="header-center">
+      <h1>Kiki's Craft</h1>
+      <p>Уютный мир вязаных игрушек амигуруми, созданных с любовью и заботой</p>
+
+      <!-- Кнопки -->
+      <div class="header-buttons">
+        <a href="#">Посмотреть коллекцию</a>
+        <a href="#">Как заказать</a>
+      </div>
+    </div>
+  </header>
 
   <!-- О НАС -->
   <section id="about" class="about">
