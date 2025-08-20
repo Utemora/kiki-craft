@@ -10,6 +10,7 @@ function openCart() {
 }
 
 // Делаем доступным глобально
+window.searchSite = searchSite;
 window.openLogin = openLogin;
 window.openCart = openCart;
 
