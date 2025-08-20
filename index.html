@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="relative h-96 overflow-hidden">
+  <header class="soft-shadow warm-gradient">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem;">
     <!-- Фоновое изображение -->
     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
          style="background-image: url('image/d9185ba777e4d02a640cdd1275f63aa2.jpg');">
@@ -36,10 +37,8 @@
       <!-- Контент хедера -->
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 pt-8">
         <!-- Логотип магазина -->
-        <div className="text-center mb-6">
-          <h1 className="handwritten text-5xl md:text-6xl lg:text-7xl text-dusty-rose mb-3 drop-shadow-lg">
-            Kiki's Craft
-          </h1>
+        <div class="logo" style="display:flex; align-items:center; gap:0.5rem;"alt="Логотип" style="height:50px; border-radius:50%;">
+      <h1 class="handwritten text-soft-pink">Kiki’s Craft</h1>        
           <p className="text-lg md:text-xl font-light text-foreground/80 max-w-2xl mx-auto leading-relaxed">
             Уютный мир вязаных игрушек амигуруми, созданных с любовью и заботой
           </p>
