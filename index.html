@@ -8,7 +8,8 @@
 </head>
 <body>
 
-import { Button } from "script.js";
+<script src="./script.js"></script>
+
 import { ShoppingCart, User, Search, Menu } from "lucide-react";
 
 export function Header() {
@@ -27,16 +28,12 @@ export function Header() {
       <nav className="relative z-20 flex items-center justify-between px-6 py-4">
         <!-- Левая навигация -->
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
+         <script>
+    Button(Меню) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
             <Menu className="w-5 h-5 mr-2" />
-            Меню
-          </Button>
-          <Button variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
-            Каталог
-          </Button>
-          <Button variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
-            О нас
-          </Button>
+    Button(Каталог) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
+    Button(О нас) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
+           </script>
         </div>
         
        <!-- Правая навигация -->
