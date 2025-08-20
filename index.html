@@ -7,52 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<script src="./script.js"></script>
-
-import { ShoppingCart, User, Search, Menu } from "lucide-react";
-
-export function Header() {
-  return (
-    <header className="relative h-96 overflow-hidden">
-      <!-- Фоновое изображение с амигуруми -->
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url("image/d9185ba777e4d02a640cdd1275f63aa2.jpg")
-      >
-        <!-- Мягкий оверлей для лучшей читабельности -->
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40" />
+  <header class="relative h-96 overflow-hidden">
+    <!-- Фоновое изображение -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('image/d9185ba777e4d02a640cdd1275f63aa2.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40"></div>
+     </div>   
+      <!-- Навигация -->
+    <nav class="relative z-20 flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-4">
+        <button class="btn ghost" variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm"><span>☰</span> Меню </button>
+        <button class="btn ghost" variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">Каталог</button>
+        <button class="btn ghost" variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">О нас</button>
       </div>
-      
-        <!-- Навигационная панель -->
-      <nav className="relative z-20 flex items-center justify-between px-6 py-4">
-        <!-- Левая навигация -->
-        <div className="flex items-center space-x-4">
-         <script>
-    Button(Меню) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
-            <Menu className="w-5 h-5 mr-2" />
-    Button(Каталог) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
-    Button(О нас) variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm hidden md:flex">
-           </script>
-        </div>
-        
-       <!-- Правая навигация -->
-        <div className="flex items-center space-x-3">
-          <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
-            <Search className="w-5 h-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
-            <User className="w-5 h-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm relative">
-            <ShoppingCart className="w-5 h-5" />
-            <!-- Счетчик товаров в корзине -->
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-soft-pink text-cloud-white text-xs rounded-full flex items-center justify-center">
+      <div class="flex items-center space-x-3">
+        <button class="btn icon" variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">🔍</button>
+        <button class="btn icon" variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">👤</button>
+        <button class="btn icon relative" variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm relative">
+          🛒
+           <span className="absolute -top-1 -right-1 w-4 h-4 bg-soft-pink text-cloud-white text-xs rounded-full flex items-center justify-center">
               2
             </span>
-          </Button>
-        </div>
-      </nav>
+        </button>
+      </div>
+    </nav>
+    
       
       <!-- Контент хедера -->
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 pt-8">
