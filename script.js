@@ -1,3 +1,15 @@
+function openLogin() {
+  alert("Открываем окно входа!");
+}
+
+function openCart() {
+  alert("Корзина пуста 🧺");
+}
+
+// Делаем доступным глобально
+window.openLogin = openLogin;
+window.openCart = openCart;
+
 function Button() {
   console.log("Button works!");
 }
