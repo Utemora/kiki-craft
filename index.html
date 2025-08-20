@@ -15,18 +15,18 @@ import { ShoppingCart, User, Search, Menu } from "lucide-react";
 export function Header() {
   return (
     <header className="relative h-96 overflow-hidden">
-      {/* Фоновое изображение с амигуруми */}
+      <!-- Фоновое изображение с амигуруми -->
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${headerImage})` }}
       >
-        {/* Мягкий оверлей для лучшей читабельности */}
+        <!-- Мягкий оверлей для лучшей читабельности -->
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40" />
       </div>
       
-      {/* Навигационная панель */}
+        <!-- Навигационная панель -->
       <nav className="relative z-20 flex items-center justify-between px-6 py-4">
-        {/* Левая навигация */}
+        <!-- Левая навигация -->
         <div className="flex items-center space-x-4">
           <Button variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
             <Menu className="w-5 h-5 mr-2" />
@@ -40,7 +40,7 @@ export function Header() {
           </Button>
         </div>
         
-        {/* Правая навигация */}
+       <!-- Правая навигация -->
         <div className="flex items-center space-x-3">
           <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm">
             <Search className="w-5 h-5" />
@@ -50,7 +50,7 @@ export function Header() {
           </Button>
           <Button variant="ghost" size="icon" className="text-foreground/80 hover:text-foreground hover:bg-cloud-white/20 backdrop-blur-sm relative">
             <ShoppingCart className="w-5 h-5" />
-            {/* Счетчик товаров в корзине */}
+            <!-- Счетчик товаров в корзине -->
             <span className="absolute -top-1 -right-1 w-4 h-4 bg-soft-pink text-cloud-white text-xs rounded-full flex items-center justify-center">
               2
             </span>
@@ -58,9 +58,9 @@ export function Header() {
         </div>
       </nav>
       
-      {/* Контент хедера */}
+      <!-- Контент хедера -->
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 pt-8">
-        {/* Логотип магазина */}
+        <!-- Логотип магазина -->
         <div className="text-center mb-6">
           <h1 className="handwritten text-5xl md:text-6xl lg:text-7xl text-dusty-rose mb-3 drop-shadow-lg">
             Kiki's Craft
@@ -70,14 +70,14 @@ export function Header() {
           </p>
         </div>
         
-        {/* Декоративные элементы */}
+         <!-- Декоративные элементы -->
         <div className="flex items-center space-x-4 mb-6">
           <div className="w-12 h-0.5 bg-soft-pink rounded-full"></div>
           <div className="w-2.5 h-2.5 bg-soft-pink rounded-full animate-pulse"></div>
           <div className="w-12 h-0.5 bg-soft-pink rounded-full"></div>
         </div>
         
-        {/* Призыв к действию */}
+         <!-- Призыв к действию -->
         <div className="flex items-center space-x-4">
           <Button className="bg-soft-pink hover:bg-dusty-rose text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 soft-shadow">
             Посмотреть коллекцию
@@ -88,7 +88,7 @@ export function Header() {
         </div>
       </div>
       
-      {/* Волнистый переход к следующей секции */}
+     <!-- Волнистый переход к следующей секции -->
       <div className="absolute bottom-0 left-0 right-0">
         <svg 
           viewBox="0 0 1440 120" 
